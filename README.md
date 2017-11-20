@@ -10,9 +10,9 @@ It is best to run on clients where Cssh is available (macOS or Linux).
 
 <img src="readme/oracle-db-monitor-icon.png" width="200">
 
-### Installation
+## Installation
 
-#### For MacOS clients: 
+### For MacOS clients: 
 
 ```Shell
 # install csshX
@@ -25,7 +25,7 @@ git clone https://github.com/AVM-Consulting/oracle-db-monitor.git
 scp oracle-db-monitor/oramonitor__*.sql  amoseyev@mydbhost1:/tmp
 
 # spin 8 ssh session to the node
-csshX/csshX amoseyev@mydbhost{1,1,1,1,1,1,1,1}.dc1.eharmony.com
+csshX/csshX oracle@mydbhost{1,1,1,1,1,1,1,1}.dc1.eharmony.com
 ```
 
 In each open ssh session run oramonitor__*.sql script: 8 sessions, 8 scripts. <br />
@@ -43,9 +43,27 @@ oracle@mydbhost1:~$ sqlplus -s / as sysdba @/tmp/oramonitor__2_DB_top_events.sql
 
 and so on..
 
+### For Debian/Ubuntu clients:
+
+Only difference is cssh install: 
+
+```Shell
+sudo apt-get install clusterssh
+```
+
+Results shold be similar as on screenshot below
+
+## Linking Oracle DB Monitor Metrics to OEM metrics.
+
+Check screenshots below. First screenshot is Oracle DB Monitor, and other screenshots are from OEM. <br /> 
+What is marked in RED   - is direct translation btween OEM metrics and Oracle DB Monitor Metrics. <br />
+What is marked in GREEN - are metrics, which we think are very useful metrics, which are not easily available in OEM. 
 
 
-### Common reasons when OEM is not available, or not practical to use
+
+
+
+## Common reasons when OEM is not available, or not practical to use
 
  - OEM is just simply not installed.
  - In DMZ setup, OEM is under NAT and OEM port is not forwarded. ssh forwarding is too much work. 
