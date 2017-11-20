@@ -68,16 +68,15 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, b
 <img src="readme/z_oracle_oem_performance_home_top_activity_page_screenshot.png?raw=true">
 <img src="readme/z_oracle_oem_performance_home_global_cache_metrics_screenshot.png?raw=true">
 
-## Common script modification scenarios
+## Common script modification scenarios:
 
- - monitor only specific instance_id. By default Oracle DB Monitor covers all RAC instances. But if you need numbers only from particular instance(s) modify folloing line in scipts:
-```SQL
+ - By default Oracle DB Monitor covers all RAC instances. But if you need stats only from particular instance(s) -  modify folloing line in scipts: ```SQL
 define inst_clause='and inst_id in (1,2,3,4,5,6)'
 ```
 
- - in scripts oramonitor__{6,7,8}*.sql you can change output columns. just open script, comment column you do not need, uncomment columns you need. 
+ - In scripts oramonitor__{6,7,8}*.sql you can change output columns. Just open script, comment column you do not need, uncomment columns you need. 
 
- - Change anything.. It is just SQL scripts. 
+ - Change really anything... It is just SQL scripts. 
 
 
 ## Common reasons when OEM is not available, or not practical to use
