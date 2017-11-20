@@ -8,10 +8,19 @@ It does not require browser/GUI. It only need access to port 22 or 1521 on Oracl
 It works for Real Application Cluster and Single node configuration.
 It is best to run on platforms where Cssh is available (macOS or Linux).
 
-![Oracle DB Monitor](./readme/oracle-db-monitor-icon.png =250x)
-
 <img src="readme/oracle-db-monitor-icon.png" width="200">
 
+### Installation (single script mode)
+
+If cssh is not availble. you can run one script at a time. 
+
+```shell
+git clone https://github.com/AVM-Consulting/oracle-db-monitor
+cd oracle-db-monitor
+scp oramonitor*.sql mydbhost1:/tmp
+ssh mydbhost1
+oracle@mydbhost1:/tmp$ sqlplus -s / as sysdba @/tmp/oramonitor_xxx.sql 5
+```
 
 ### Common reasons when OEM is not available, or not practical to use
 
