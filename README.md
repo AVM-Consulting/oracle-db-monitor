@@ -69,6 +69,12 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, b
 <img src="readme/z_oracle_oem_performance_home_top_activity_page_screenshot.png?raw=true">
 <img src="readme/z_oracle_oem_performance_home_global_cache_metrics_screenshot.png?raw=true">
 
+## Type of monitoring
+
+ - oramonitor__x_DB_*.sql scripts track DB level numbers
+ - oramonitor__x_SESSION_*.sql scripts track details down to SESSION level
+ - oramonitor__x_SQL_*.sql scripts track number on SQL level 
+
 ## Common script modification scenarios:
 
  - By default Oracle DB Monitor covers all RAC instances. But if you need stats only from particular instance(s) -  modify folloing line in scipts: 
@@ -86,5 +92,4 @@ define inst_clause='and inst_id in (1,2,3,4,5,6)'
  - OEM is just simply not installed.
  - In DMZ setup, OEM is under Network Address Translation (NAT) and OEM https port is not forwarded. ssh forwarding is too much work. 
  - OEM is accessible via public internet, and OEM self-signed certificates are prohibited for security reasons. 
-
 
