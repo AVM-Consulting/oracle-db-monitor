@@ -14,7 +14,7 @@ It is best to run on platforms where Cssh is available (macOS or Linux).
 
 If cssh is not availble. you can run one script at a time. 
 
-```bash
+```Shell
 git clone https://github.com/AVM-Consulting/oracle-db-monitor
 cd oracle-db-monitor
 scp oramonitor*.sql mydbhost1:/tmp
