@@ -10,17 +10,38 @@ It is best to run on platforms where Cssh is available (macOS or Linux).
 
 <img src="readme/oracle-db-monitor-icon.png" width="200">
 
-### Installation (single script mode)
+### Installation
 
-If cssh is not availble. you can run one script at a time. 
+If cssh is not availble.  
+
+Install cssh: 
+
 
 ```Shell
-git clone https://github.com/AVM-Consulting/oracle-db-monitor
-cd oracle-db-monitor
-scp oramonitor*.sql mydbhost1:/tmp
-ssh mydbhost1
-oracle@mydbhost1:/tmp$ sqlplus -s / as sysdba @/tmp/oramonitor_xxx.sql 5
+# install csshX
+git clone https://github.com/brockgr/csshx.git
+# install oracle-db-monitor
+git clone git@github.com:AVM-Consulting/oracle-db-monitor.git
+# copy .sql file to db host.. in RAC configuration, can copy file to any single rac node.
+scp oracle-db-monitor/oramonitor__*.sql  amoseyev@mydbhost1:/tmp
+# spin 8 ssh session to the node
+csshX/csshX amoseyev@mydbhost{1,1,1,1,1,1,1,1}.dc1.eharmony.com
 ```
+
+In each open ssh session run one oramonitor__*.sql script (8 sessions, 8 scripts). Argument 5, is monitoring window of 5 seconds.
+
+In session 1:
+```Shell
+oracle@mydbhost1:~$ sqlplus -s / as sysdba @/tmp/oramonitor__1_DB_ash.sql 5
+```
+
+In session 2:
+```Shell
+oracle@mydbhost1:~$ sqlplus -s / as sysdba @/tmp/oramonitor__2_DB_top_events.sql 5
+```
+
+and so on..
+
 
 ### Common reasons when OEM is not available, or not practical to use
 
