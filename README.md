@@ -71,9 +71,9 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, b
 
 ## Type of monitoring
 
- - oramonitor__x_DB_*.sql scripts track DB level numbers
- - oramonitor__x_SESSION_*.sql scripts track details down to SESSION level
- - oramonitor__x_SQL_*.sql scripts track number on SQL level 
+ - **oramonitor__x_DB_*.sql** scripts track DB level numbers
+ - **oramonitor__x_SESSION_*.sql** scripts track details down to SESSION level
+ - **oramonitor__x_SQL_*.sql** scripts track number on SQL level 
 
 ## Common script modification scenarios:
 
