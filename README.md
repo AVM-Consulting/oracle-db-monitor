@@ -26,7 +26,7 @@ git clone https://github.com/AVM-Consulting/oracle-db-monitor.git
 scp oracle-db-monitor/oramonitor__*.sql  amoseyev@mydbhost1:/tmp
 
 # spin 8 ssh session to the node
-csshX/csshX oracle@mydbhost{1,1,1,1,1,1,1,1}.mycompany.com
+csshx/csshX oracle@mydbhost{1,1,1,1,1,1,1,1}.mycompany.com
 ```
 
 In each open ssh session run oramonitor__*.sql script: 8 sessions, 8 scripts. <br />
