@@ -3,10 +3,10 @@ Oracle DB Monitor
 
 This is command line Oracle DB Monitoring tool. Alternative to Oracle Enterprise Manager (OEM). 
 
-It presents key metrics from multiple OEM Pages in single pane of glass.
-It does not require browser/GUI. It only need access to port 22 or 1521 on Oracle machine.
-It works for Real Application Cluster and Single node configuration.
-It is best to run on platforms where Cssh is available (macOS or Linux).
+It presents key metrics from multiple OEM Pages in single pane of glass. <br />
+It does not require browser/GUI. It only need access to port 22 or 1521 on Oracle machine. <br />
+It works for Real Application Cluster and Single node configuration. <br />
+It is best to run on platforms where Cssh is available (macOS or Linux). 
 
 <img src="readme/oracle-db-monitor-icon.png" width="200">
 
