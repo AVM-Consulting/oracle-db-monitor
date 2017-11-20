@@ -82,7 +82,9 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, b
 define inst_clause='and inst_id in (1,2,3,4,5,6)'
 ```
 
- - In scripts oramonitor__{6,7,8}*.sql you can change output columns. Just open script, comment column you do not need, uncomment columns you need. 
+ - In scripts **oramonitor__{6,7,8}*.sql** you can change output columns. Just open script, comment column you do not need, uncomment columns you need. 
+
+ - In script **oramonitor__8_SQL_specific_sql_id.sql** add specific SQL_ID which are needed to be monitored. Now its 2 SQL_IDs, but can add more.
 
  - Change really anything... It is just SQL scripts. 
 
