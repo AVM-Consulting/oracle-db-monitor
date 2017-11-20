@@ -6,29 +6,30 @@ Oracle DB Monitor
 It presents key metrics from multiple OEM Pages in single pane of glass. <br />
 It does not require browser/GUI. It only need access to port 22 or 1521 on Oracle machine. <br />
 It works for Real Application Cluster and Single node configuration. <br />
-It is best to run on platforms where Cssh is available (macOS or Linux). 
+It is best to run on clients where Cssh is available (macOS or Linux). 
 
 <img src="readme/oracle-db-monitor-icon.png" width="200">
 
 ### Installation
 
-If cssh is not availble.  
-
-Install cssh: 
-
+#### For MacOS clients: 
 
 ```Shell
 # install csshX
 git clone https://github.com/brockgr/csshx.git
+
 # install oracle-db-monitor
-git clone git@github.com:AVM-Consulting/oracle-db-monitor.git
+git clone https://github.com/AVM-Consulting/oracle-db-monitor.git
+
 # copy .sql file to db host.. in RAC configuration, can copy file to any single rac node.
 scp oracle-db-monitor/oramonitor__*.sql  amoseyev@mydbhost1:/tmp
+
 # spin 8 ssh session to the node
 csshX/csshX amoseyev@mydbhost{1,1,1,1,1,1,1,1}.dc1.eharmony.com
 ```
 
-In each open ssh session run one oramonitor__*.sql script (8 sessions, 8 scripts). Argument 5, is monitoring window of 5 seconds.
+In each open ssh session run oramonitor__*.sql script: 8 sessions, 8 scripts. <br />
+(Argument 5, is monitoring window of 5 seconds)
 
 In session 1:
 ```Shell
@@ -41,6 +42,7 @@ oracle@mydbhost1:~$ sqlplus -s / as sysdba @/tmp/oramonitor__2_DB_top_events.sql
 ```
 
 and so on..
+
 
 
 ### Common reasons when OEM is not available, or not practical to use
