@@ -70,7 +70,8 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, b
 
 ## Common script modification scenarios:
 
- - By default Oracle DB Monitor covers all RAC instances. But if you need stats only from particular instance(s) -  modify folloing line in scipts: ```SQL
+ - By default Oracle DB Monitor covers all RAC instances. But if you need stats only from particular instance(s) -  modify folloing line in scipts: 
+```SQL
 define inst_clause='and inst_id in (1,2,3,4,5,6)'
 ```
 
@@ -82,7 +83,7 @@ define inst_clause='and inst_id in (1,2,3,4,5,6)'
 ## Common reasons when OEM is not available, or not practical to use
 
  - OEM is just simply not installed.
- - In DMZ setup, OEM is under NAT and OEM port is not forwarded. ssh forwarding is too much work. 
+ - In DMZ setup, OEM is under Network Address Translation (NAT) and OEM https port is not forwarded. ssh forwarding is too much work. 
  - OEM is accessible via public internet, and OEM self-signed certificates are prohibited for security reasons. 
 
 
