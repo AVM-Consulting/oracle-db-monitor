@@ -72,7 +72,7 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, b
 ## Type of monitoring
 
  - **oramonitor__x_DB_*.sql** scripts track DB level numbers
- - **oramonitor__x_SESSION_*.sql** scripts track details down to SESSION level
+ - **oramonitor__x_SESSION_*.sql** scripts track details down to SESSION/PROCESS level
  - **oramonitor__x_SQL_*.sql** scripts track number on SQL level 
 
 ## Common script modification scenarios:
@@ -90,7 +90,7 @@ define inst_clause='and inst_id in (1,2,3,4,5,6)'
 ## Common reasons when OEM is not available, or not practical to use
 
  - OEM is just simply not installed.
- - In DMZ setup, OEM is under Network Address Translation (NAT) and OEM https port is not forwarded. ssh forwarding is too much work. 
- - OEM is accessible via public Internet, and OEM self-signed certificates are prohibited for security reasons. 
+ - In DMZ setup, OEM is under Network Address Translation (NAT) and OEM https port is not forwarded. ssh forwarding is too much work.
+ - OEM is accessible only via public Internet (Common for Cloud installations), and default OEM self-signed certificates are prohibited for security reasons.
 
 
