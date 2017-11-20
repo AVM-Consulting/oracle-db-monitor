@@ -10,6 +10,7 @@ It is best to run on platforms where Cssh is available (macOS or Linux).
 
 ![Oracle DB Monitor](./readme/oracle-db-monitor-icon.png =250x)
 
+<img src="readme/oracle-db-monitor-icon.png" width="200">
 
 
 ### Common reasons when OEM is not available, or not practical to use
