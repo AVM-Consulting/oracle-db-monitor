@@ -91,6 +91,6 @@ define inst_clause='and inst_id in (1,2,3,4,5,6)'
 
  - OEM is just simply not installed.
  - In DMZ setup, OEM is under Network Address Translation (NAT) and OEM https port is not forwarded. ssh forwarding is too much work.
- - OEM is accessible only via public Internet (Common for Cloud installations), and default OEM self-signed certificates are prohibited for security reasons.
+ - OEM is accessible only via public Internet (Common for Cloud installations), and default OEM self-signed certificates are prohibited for security reasons [More details.](https://www.avmconsulting.net/single-post/2017/11/20/ERRCERTAUTHORITYINVALID-invalid-certificate-error)
 
 
