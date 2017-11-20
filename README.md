@@ -63,7 +63,7 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, w
 <img src="readme/z_oramonitor_screenshot.png">
 
 ### Screenshot of OEM
-<img src="readme/z_oracle_oem_performance_home_throughput_tab_page_screenshot.png">
+<img src="readme/z_oracle_oem_performance_home_throughput_tab_page_screenshot.png" width=2000>
 <img src="readme/z_oracle_oem_performance_home_io_tab_page_screenshot.png">
 <img src="readme/z_oracle_oem_performance_home_top_activity_page_screenshot.png">
 <img src="readme/z_oracle_oem_performance_home_global_cache_metrics_screenshot.png">
