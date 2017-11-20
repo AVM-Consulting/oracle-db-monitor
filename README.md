@@ -60,7 +60,7 @@ What is marked in RED   - is direct translation btween OEM metrics and Oracle DB
 What is marked in GREEN - are metrics, which we think are very useful metrics, which are not easily available in OEM. 
 
 ### Screenshot of Oracle DB Monitor
-<img src="readme/z_oramonitor_screenshot.png">
+<img src="readme/z_oramonitor_screenshot.png?raw=true">
 
 ### Screenshot of OEM
 <img src="readme/z_oracle_oem_performance_home_throughput_tab_page_screenshot.png?raw=true">
