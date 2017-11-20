@@ -8,7 +8,7 @@ It does not require browser/GUI. It only need access to port 22 or 1521 on Oracl
 It works for Real Application Cluster and Single node configuration.
 It is best to run on platforms where Cssh is available (macOS or Linux).
 
-![Oracle DB Monitor](/readme/oracle-db-monitor-icon.png =250x)
+![Oracle DB Monitor](./readme/oracle-db-monitor-icon.png =250x)
 
 
 
