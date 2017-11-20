@@ -51,7 +51,7 @@ Only difference is cssh install:
 sudo apt-get install clusterssh
 ```
 
-Results shold be similar as on screenshot below
+Results will be similar as on screenshot below
 
 ## Linking Oracle DB Monitor Metrics to OEM metrics.
 
@@ -59,8 +59,14 @@ Check screenshots below. First screenshot is Oracle DB Monitor, and other screen
 What is marked in RED   - is direct translation btween OEM metrics and Oracle DB Monitor Metrics. <br />
 What is marked in GREEN - are metrics, which we think are very useful metrics, which are not easily available in OEM. 
 
+### Screenshot of Oracle DB Monitor
+<img src="readme/z_oramonitor_screenshot.png">
 
-
+### Screenshot of OEM
+<img src="readme/z_oracle_oem_performance_home_throughput_tab_page_screenshot.png">
+<img src="readme/z_oracle_oem_performance_home_io_tab_page_screenshot.png">
+<img src="readme/z_oracle_oem_performance_home_top_activity_page_screenshot.png">
+<img src="readme/z_oracle_oem_performance_home_global_cache_metrics_screenshot.png">
 
 
 ## Common reasons when OEM is not available, or not practical to use
