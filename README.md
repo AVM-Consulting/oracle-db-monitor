@@ -6,8 +6,8 @@ Oracle DB Monitor
 - It presents key metrics from multiple OEM Pages in single pane of glass. <br />
 - It does not require browser/GUI. It only need access to port 22 or 1521 on Oracle db host. <br />
 - It works for Real Application Cluster and Single node configuration. <br />
-- It is best to run on clients where Cssh is available (macOS or Linux). 
-- It does not replace OEM, but it is very useful tool where OEM is not availabe. 
+- It is best to run on clients where Cssh is available (MacOS or Linux). 
+- It does not replace OEM, but it is very useful tool where OEM is not available. 
 
 <img src="readme/oracle-db-monitor-icon.png" width="200">
 
@@ -57,8 +57,8 @@ Results will be similar as on screenshot below
 ## Linking Oracle DB Monitor Metrics to OEM metrics.
 
 Check screenshots below. First screenshot is Oracle DB Monitor, and other screenshots are from OEM. <br /> 
-What is marked in RED   - is direct translation btween OEM metrics and Oracle DB Monitor Metrics. <br />
-What is marked in GREEN - are metrics, which we think are very useful metrics, but are not easily accesible in OEM. 
+What is marked in RED   - is direct translation between OEM metrics and Oracle DB Monitor Metrics. <br />
+What is marked in GREEN - are metrics, which we think are very useful metrics, but are not easily accessible in OEM. 
 
 ### Screenshot of Oracle DB Monitor
 <img src="readme/z_oramonitor_screenshot.png?raw=true">
@@ -77,7 +77,7 @@ What is marked in GREEN - are metrics, which we think are very useful metrics, b
 
 ## Common script modification scenarios:
 
- - By default Oracle DB Monitor covers all RAC instances. But if you need stats only from particular instance(s) -  modify folloing line in scipts: 
+ - By default Oracle DB Monitor covers all RAC instances. But if you need stats only from particular instance(s) -  modify following line in scripts: 
 ```SQL
 define inst_clause='and inst_id in (1,2,3,4,5,6)'
 ```
@@ -91,5 +91,6 @@ define inst_clause='and inst_id in (1,2,3,4,5,6)'
 
  - OEM is just simply not installed.
  - In DMZ setup, OEM is under Network Address Translation (NAT) and OEM https port is not forwarded. ssh forwarding is too much work. 
- - OEM is accessible via public internet, and OEM self-signed certificates are prohibited for security reasons. 
+ - OEM is accessible via public Internet, and OEM self-signed certificates are prohibited for security reasons. 
+
 
